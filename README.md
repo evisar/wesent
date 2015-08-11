@@ -11,3 +11,5 @@ thus I create and cache types on the fly with type builder.
 
 ESENT is not hardwired, there is IRepository<T> interface, which 
 could be plugged-in (not yet written the config attribute) and persist data in File, Mongo, Azure, etc.
+
+It has currently support for authentication with Username Credentials only.
