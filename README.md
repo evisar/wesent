@@ -1,5 +1,5 @@
 # wesent
-Dynamic OData service using ESENT repository
+Dynamic OData service using ESENT repository (this is work in progress)
 The ultimate idea is to allow you to literally draw and prototype your OData API, in the least amount of time.
 
 This was inspired by DeployD.
