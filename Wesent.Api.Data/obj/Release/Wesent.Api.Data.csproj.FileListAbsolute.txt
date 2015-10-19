@@ -1,6 +1,0 @@
-c:\wesent\Wesent.Api\Wesent.Api.Data\bin\Release\Wesent.Api.Data.dll.config
-c:\wesent\Wesent.Api\Wesent.Api.Data\bin\Release\Wesent.Api.Data.dll
-c:\wesent\Wesent.Api\Wesent.Api.Data\bin\Release\Wesent.Api.Data.pdb
-c:\wesent\Wesent.Api\Wesent.Api.Data\obj\Release\Wesent.Api.Data.csprojResolveAssemblyReference.cache
-c:\wesent\Wesent.Api\Wesent.Api.Data\obj\Release\Wesent.Api.Data.dll
-c:\wesent\Wesent.Api\Wesent.Api.Data\obj\Release\Wesent.Api.Data.pdb
