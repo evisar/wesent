@@ -25,7 +25,7 @@ namespace Wesent.Api
         public void Application_Start()
         {
             var edmx = new XmlDocument();
-            edmx.Load(WesentConfiguration.DefaultInstance.Model);
+            edmx.Load(HttpContext.Current.Server.MapPath(WesentConfiguration.DefaultInstance.Model));
             var modelParser = new EdmxParser(edmx);
 
             var types = new RuntimeTypeGenerator(modelParser).GenerateTypes(); 
@@ -47,6 +47,10 @@ namespace Wesent.Api
                 }
                 config.Routes.MapODataRoute("odata", "", builder.GetEdmModel());
 
+                if(!Directory.Exists("C:\\LogFiles\\wesent\\"))
+                {
+                    Directory.CreateDirectory("C:\\LogFiles\\wesent\\");
+                }
                 File.AppendAllLines("C:\\LogFiles\\wesent\\log.log", new[] { DateTime.Now.ToString() });
 
 

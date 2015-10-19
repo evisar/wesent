@@ -15,6 +15,7 @@
         <EntityContainer Name="ModelContainer" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="People" EntityType="Wesent.Sample.Person" />
           <EntitySet Name="Products" EntityType="Wesent.Sample.Product" />
+          <EntitySet Name="Departments" EntityType="Wesent.Sample.Department" />
         </EntityContainer>
         <EntityType Name="Person">
           <Key>
@@ -31,6 +32,15 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Category" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="City" Type="String" Nullable="false" />
+          <Property Name="Country" Type="String" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -61,8 +71,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d518a7aad5ae4b16a052d04ce2138229" Name="Diagram1">
-        <EntityTypeShape EntityType="Wesent.Sample.Person" Width="1.5" PointX="2.625" PointY="1.25" />
-        <EntityTypeShape EntityType="Wesent.Sample.Product" Width="1.5" PointX="6.25" PointY="1.625" />
+        <EntityTypeShape EntityType="Wesent.Sample.Person" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="Wesent.Sample.Product" Width="1.5" PointX="2.375" PointY="0.5" />
+        <EntityTypeShape EntityType="Wesent.Sample.Department" Width="1.5" PointX="4.25" PointY="0.5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
