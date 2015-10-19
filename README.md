@@ -13,3 +13,10 @@ ESENT is not hardwired, there is IRepository<T> interface, which
 could be plugged-in (not yet written the config attribute) and persist data in File, Mongo, Azure, etc.
 
 It has currently support for authentication with Username Credentials only.
+
+
+![alt tag](https://github.com/evisar/wesent/blob/master/images/diagram.png)
+
+![alt tag](https://github.com/evisar/wesent/blob/master/images/ef%20modeler.png)
+
+![alt tag](https://github.com/evisar/wesent/blob/master/images/linqpad.png)
